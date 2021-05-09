@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Covid19 data
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-content >
+      
+      <ion-card-subtitle  style="margin: 10px;">
+        Welcome to Covid19 App!
+      </ion-card-subtitle>
+      <p style="padding: 10px;">
+        <br>
+        Here you can easily find data about current pandemic.
+        <br>
+        <br>
+        This page provides you with an overview of global situation.<br> You can also use search tab to quickly find live data about specific country.
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card >
+
+    <ion-card-header>
+      <ion-item lines="none">
+        <ion-icon name="earth-outline" slot="start"></ion-icon>     
+        <ion-card-title> Global Situation</ion-card-title> 
+      </ion-item>
+    </ion-card-header>
+    
+    <ion-card-content>
+      <ion-item class="newConfirmed">   
+        <p>New Confirmed Cases: {{newConfirmed}}</p>
+        <ion-icon name="accessibility-outline" slot="start"></ion-icon>
+      </ion-item>
+      <ion-item class="totalConfirmed">   
+        <p>Total Confirmed Cases: {{totalConfirmed}}</p>
+        <ion-icon name="accessibility-outline" slot="start"></ion-icon>
+      </ion-item>    
+    </ion-card-content>
+
+    <ion-card-content>
+      <ion-item class="newDeaths">   
+        <p>New Confirmed Deaths: {{newDeaths}}</p>
+          <ion-icon name="skull-outline" slot="start"></ion-icon>  
+      </ion-item>            
+      <ion-item class="totalDeaths">   
+        <p>Total Confirmed Deaths: {{totalDeaths}}</p>
+        <ion-icon name="skull-outline" slot="start"></ion-icon>     
+      </ion-item>
+    </ion-card-content>
+
+    <ion-card-content style="margin-bottom: 10vh;">
+      <ion-item class="newRecovered">
+        <p>New Recovered Cases: {{newRecovered}}</p>
+        <ion-icon name="fitness-outline" slot="start"></ion-icon>
+      </ion-item>
+      <ion-item class="totalRecovered">
+        <p>Total Recovered Cases: {{totalRecovered}}</p>
+        <ion-icon name="fitness-outline" slot="start"></ion-icon>
+      </ion-item>
+    </ion-card-content>
+    
+  </ion-card>
+
+</ion-content>
